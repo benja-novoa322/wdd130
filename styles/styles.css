@@ -1,4 +1,4 @@
-.wildcard {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -58,7 +58,7 @@ aside h2 {
     position: absolute;
     left: 100px;
     top: 0px;
-    
+
 }
 
 */ footer {
