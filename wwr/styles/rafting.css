@@ -11,55 +11,95 @@
     --body-font: "Roboto", sans-serif;
 }
 
-header {
+.page {
     background-color: var(--primary-color);
     color: var(--accent2-color);
     display: grid;
     grid-template-columns: 230px 1fr;
+    grid-template-rows: auto auto;
 }
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+
 
 header img {
     display: flex;
     grid-column: 1/2;
 }
 
-nav {
+main {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+h1 {
+    display: grid;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: var(--accent2-color);
+    text-align: left;
+    grid-row: 1;
+}
+
+.info-contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 269px;
+    width: 500px;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 0;
+    padding-top: 100px;
+}
+
+.map {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1;
+    width: 600px;
+    padding-top: 20px;
+    padding-right: 100px;
+}
+
+.employee {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    text-align: center;
+}
+
+.employee figure {
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
 }
 
-.history {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.employee img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-p {
-    grid-column: 1/2;
+.employee figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
 }
 
-h2 {
-    grid-column: 2/3;
-    grid-row: 2/2;
-    text-align: right;
-}
-
-.adventure {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 40px;
-}
-
-h2 {
-    grid-column: 1/5;
-    grid-row: 2/5;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     font-family: var(--body-font);
@@ -67,59 +107,113 @@ body {
 }
 
 header,
-main,
 footer {
-    width: 840px;
+    width: 1000px;
     margin: 0 auto;
 }
 
-h1,
-h2 {
+h1 {
     font-family: var(--heading-font);
     color: var(--secondary-color)
 }
 
 nav,
-p,
-section,
-article {
+section {
     margin: 16px;
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
 
 h1 {
     position: absolute;
-    top: 20px;
     width: 100%;
     padding: 16px;
-    text-align: center;
+    text-align: left;
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: var(--accent2-color);
 }
 
-article {
-    position: relative;
-    font-style: var(--heading-font);
+form {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0, 0, 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
 }
 
-.article img {
-    float: right;
-    width: 100px;
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb (0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3rem;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+
+label {
+    text-align: left;
+    padding-right: 1rem;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.socialmedia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: right;
+    text-align: right;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 footer {
