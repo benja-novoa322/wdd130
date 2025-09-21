@@ -60,5 +60,5 @@ p {
 footer {
     margin-top: 10px;
     border-top: 10px solid #000;
-    align-items: center;
+    text-align: center;
 }
