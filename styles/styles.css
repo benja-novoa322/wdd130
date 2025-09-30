@@ -37,16 +37,19 @@ main {
 aside {
     width: 400px;
     height: auto;
-    margin: 1px;
-    border: 1px;
-    padding: 5px;
-    background-color: lightblue;
-    color: white;
     text-align: center;
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    color: #000;
+    top: 1px;
+    left: 175px;
 }
 
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
 }
 
@@ -56,6 +59,7 @@ main img {
     border: var(--border-img);
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 p {
@@ -66,4 +70,14 @@ footer {
     margin-top: 10px;
     border-top: 10px solid #000;
     text-align: center;
+}
+
+/* class selectors */
+
+.box {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #0a66c2;
+    color: white;
+    background-color: #fff;
 }
