@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description" content="Comunication is the best way to undesrtand each other">
+    <meta name="author" content="Benjamin Novoa">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <p>Address: Av. The Rapids 123, Lima, Perú</p>
+        <p>Phone: +51 1 234 56758 / +51 987 6577 4 321</p>
+        <p>Email: therapids@company.com</p>
+        <div class="layout">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d75104.13209324615!2d-74.57109362364265!3d-8.38446972716154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spe!4v1760485718778!5m2!1sen!2spe"
+                width="600" height="450" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form class="row1">
+                <label for="fname">Name:</label>
+                <input type="text" name="fname" id="fname">
+                <label for="mail">Email:</label>
+                <input type="email" name="mail" id="mail">
+                <div class="radio-group">
+                    <label for="purpose">Purpose of the message:</label>
+                    <label>
+                        <input type="radio" name="purpose" id="generalinq" value="general">
+                        General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" id="reservationquest" value="reservation">
+                        Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" id="sugestion" value="suggestion">
+                        Web Suggestion
+                    </label>
+                </div>
+                <label for="feedback">Message</label>
+                <textarea name="feedback" id="feedback" rows="3"></textarea>
+                <!-- <label for="suscribe">Please subscribe me to the monthly newsletter</label>
+                <input type="checkbox" name="suscribe" id="suscribe"> -->
+                <label>
+                    <input type="checkbox" name="suscribe" id="feedback" value="feedback"> Please subscribe me to the
+                    monthly newsletter
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <p>©️ 2025 The Rapids Benjamin Novoa</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.webp" alt="Instagram"></a>
+            <a href="https://x.com/"><img src="images/x.webp" alt="X"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
