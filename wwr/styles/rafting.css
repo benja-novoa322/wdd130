@@ -171,7 +171,6 @@ form {
 .radio-group {
     display: flex;
     flex-direction: column;
-    align-items: left;
     gap: 5px;
 }
 
@@ -190,7 +189,7 @@ input[type="checkbox"] {
 button {
     background-color: rgb(48, 48, 204);
     color: aliceblue;
-    pad: 20px;
+    padding: 10px;
     border-radius: 5px;
 }
 
@@ -253,5 +252,136 @@ button:hover {
     height: 250px;
     border-radius: 6px;
 }
+
+h3 {
+    color: #47D799;
+}
+
+.cta-row {
+    display: flex;
+    align-items: center; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
+}
+
+.cta-row h2,
+.cta-row p {
+    margin: 0;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* trips */
+
+.cta-contact {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.cta-contact h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.cta-contact p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.btn-contact {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-contact:hover {
+    background-color: #005fa3;
+}
+
+
+.trips-info {
+    display: grid;
+    grid-template-columns: 228px 228px 228px;
+    gap: 2rem;
+    padding: 2rem;
+    border: 1px solid rgb(62, 58, 58);
+    font-style: italic;
+    background-color: #85bfeb;
+}
+
+.grid-item2 {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.grid-item2 img {
+    width: 200px;
+    height: 150px;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #0077cc;
+    color: white;
+    text-align: left;
+}
+
+th, td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+
+tbody tr:hover {
+    background-color: #d0e7f9;
+    transition: background-color 0.3s ease;
+}
+
+th {
+    font-size: 1.1rem;
+}
+
+td {
+    font-style: italic;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
